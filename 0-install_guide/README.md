@@ -25,7 +25,7 @@
 1. pytorch 软件本身；
 2. cpu 版本 直接安装，依赖比较少：pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 3. cuda：nvidia 开发的一个在 GPU 上进行编程的一种语言， 和 C语言很类似；*.cu
-4. cuda 最终要的作用就是加速，在GPU上进行加速；
+4. cuda 最重要的作用就是加速，在GPU上进行加速；
 5. GPU 非常善于处理结构化的数据，深度学习中 这些计算 ： 矩阵运算 --> 特别适合我们GPU来处理；
 6. cuda --> nvcc 编译器；装好cuda 后 nvcc 自动安装；
 7. cuda 一定要有nvidia的卡支持，不一定所有的nvidia的卡都支持cuda；
