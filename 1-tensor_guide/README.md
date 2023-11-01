@@ -44,26 +44,26 @@
 - 父类： class _TensorBase 在__init__.pyi 中
 - 常用的属性：
 **requires_grad、shape、dytpe、layout、ndim、grad_fn**
-- 常用的方法
-**pointewise类型的方法：abs、acos、add、addcdiv**
+- 常用的方法:
+   **pointewise类型的方法：abs、acos、add、addcdiv**
   
-**投票函数：all any**
+        **投票函数：all any**
 
-**bit相关的操作**
+        **bit相关的操作**
 
-**clone**
+        **clone**
 
-**统计学上的运算：mean var median min max**
+        **统计学上的运算：mean var median min max**
 
-**backward：反向传播的时候使用**
+        **backward：反向传播的时候使用**
 
-**register_hook: 钩子函数**
+        **register_hook: 钩子函数**
 
-** retain_grad: 保留梯度** 
+        ** retain_grad: 保留梯度** 
 
-** resize：通过插值的方式进行尺度缩放 **
+        ** resize：通过插值的方式进行尺度缩放 **
 
-** grad 查询梯度信息**
+        ** grad 查询梯度信息**
 
 ## tensor 的构成
 - meta_data : 描述一个tensor(shape/dtype/ndim/stride)
