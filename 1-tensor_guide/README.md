@@ -29,8 +29,8 @@
 - permute/transpose 换轴之后就不满足这种规律（stride）了 --> 数据不连续 uncontiguous；
 - reshape 和 view ： 在大部分情况下都是一样的；数据不连续的情况下就有区别了。
 - view: 永远不会生成新的数据，永远是一个view，视图；
-- reshape：如何可能返回一个视图的话，它就返回一个视图，如果出现数据不连续的情况导致返回不了视图，
-- reshape就会返回一个新的tensor(新的一份raw_data)
+- reshape：如何可能返回一个视图的话，它就返回一个视图，如果出现数据不连续的情况导致返回不了视图，reshape就会返回一个新的tensor(新的一份 
+            raw_data)
 - uncontiguous: 对我们硬件不友好的，会导致我们的性能下降；
 
 ## pytorch 相关代码
