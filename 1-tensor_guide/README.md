@@ -15,11 +15,11 @@
 # tensor 的结构
 1. meta_data ：dtype、shape、dims、device、stride()
 2. raw_data : 内存中的数据（raw：原始）
-3. data_ptr 查询的是我们raw_data;
+3. data_ptr 查询的是我们raw_data的地址，只要raw_data不变，地址就不变;
 4. id : raw_data 或者 mete_data 有一个改变就会改变
 
 # tensor 的视图
-- transpose storage 之后没有发生任何的变化，raw_data 没有变；
+- transpose 之后storage 没有发生任何的变化，raw_data 没有变；
 - stride: 正常情况下某一维度的stride的值等于后几个维度相乘；
 
 # reshape/view/permute/transpose
