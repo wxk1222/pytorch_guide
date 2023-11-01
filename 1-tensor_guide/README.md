@@ -23,7 +23,7 @@
 - stride: 正常情况下某一维度的stride的值等于后几个维度相乘；
 
 # reshape/view/permute/transpose
-- 这四个算子(方法) raw_data 都没变；
+- 这四个算子(方法) raw_data 都没变，数据的排布都没变，执行storage运行结果都是一样的；
 - 变化的都是 shape 和 stride；
 - reshape 和 view 可以改变维度的；
 - permute/transpose 换轴之后就不满足这种规律（stride）了 --> 数据不连续 uncontiguous；
