@@ -31,7 +31,7 @@
 - view: 永远不会生成新的数据，永远是一个view，视图；
 - reshape：如何可能返回一个视图的话，它就返回一个视图，如果出现数据不连续的情况导致返回不了视图，
 - reshape就会返回一个新的tensor(新的一份raw_data)
-- uncontiguous: 对我们硬件不有好的，会导致我们的性能下降；
+- uncontiguous: 对我们硬件不友好的，会导致我们的性能下降；
 
 ## pytorch 相关代码
 - /site-packages/torch/_C/_VariableFunctions.pyi --> tensor 的c++接口
